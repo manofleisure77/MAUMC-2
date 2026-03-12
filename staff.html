@@ -87,8 +87,8 @@
     <main id="main-content">
       <!-- Interior page header keeps the same visual language without repeating the homepage hero. -->
       <section class="section page-header" aria-labelledby="staff-page-title">
-        <div class="container split-layout">
-          <div class="split-layout__content">
+        <div class="container">
+          <div class="page-header__content">
             <p class="eyebrow">Who We Are</p>
             <h1 id="staff-page-title">
               Meet the people who help guide Maple Avenue.
@@ -112,14 +112,6 @@
               </a>
             </div>
           </div>
-
-          <aside class="info-panel" aria-label="Staff page overview">
-            <h2 class="footer-title">A clearer staff directory</h2>
-            <p>
-              Each profile uses the same card language as the homepage so bios,
-              photos, and contact actions stay readable and visually consistent.
-            </p>
-          </aside>
         </div>
       </section>
 
@@ -260,6 +252,63 @@
           </div>
         </div>
       </section>
+
+      <section class="section" id="updates" aria-labelledby="updates-heading">
+        <div class="container">
+          <div class="newsletter-panel">
+            <div class="newsletter-panel__content">
+              <p class="eyebrow">Stay Connected</p>
+              <h2 id="updates-heading">Get church updates by email.</h2>
+              <p>
+                Keep announcements, ministry reminders, and weekly church news
+                within easy reach. This static prototype includes the signup
+                pattern only; connect it to your real email platform later.
+              </p>
+            </div>
+
+            <form class="newsletter-form" action="#" method="post">
+              <div class="newsletter-form__fields">
+                <div class="form-field">
+                  <label for="staff-signup-name">
+                    Name <span class="form-optional">(optional)</span>
+                  </label>
+                  <input id="staff-signup-name" name="signup_name" type="text" />
+                </div>
+
+                <div class="form-field">
+                  <label for="staff-signup-email">
+                    Email Address <span class="form-required">(required)</span>
+                  </label>
+                  <input
+                    id="staff-signup-email"
+                    name="signup_email"
+                    type="email"
+                    inputmode="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="newsletter-form__actions">
+                <button class="button button--primary" type="submit">
+                  Sign Up
+                </button>
+                <a
+                  class="button button--ghost"
+                  href="https://www.facebook.com/mapleaveumc/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Follow on Facebook
+                </a>
+                <p class="newsletter-form__note">
+                  No spam. This is a front-end-only form placeholder.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" id="contact">
@@ -307,6 +356,14 @@
                 target="_blank"
                 rel="noreferrer"
                 >Give</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/mapleaveumc/"
+                target="_blank"
+                rel="noreferrer"
+                >Facebook</a
               >
             </li>
           </ul>

@@ -504,9 +504,14 @@ p {
   background: linear-gradient(180deg, rgba(234, 209, 191, 0.32), transparent);
 }
 
+.page-header__content,
 .page-header .split-layout__content {
   display: grid;
   gap: var(--space-3);
+}
+
+.page-header__content {
+  max-width: 52rem;
 }
 
 .contact-layout {
@@ -620,6 +625,259 @@ p {
 .contact-form-card {
   display: grid;
   gap: var(--space-3);
+}
+
+.beliefs-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.belief-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: var(--space-5);
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-card);
+}
+
+.belief-section__header {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+}
+
+.belief-section__index {
+  color: var(--color-accent-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.belief-section__header h3 {
+  margin: 0;
+}
+
+.belief-section__body {
+  min-width: 0;
+}
+
+.belief-list {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--color-ink-soft);
+  font-size: 1.08rem;
+}
+
+.belief-list li {
+  margin: 0;
+}
+
+.belief-source {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+.belief-quote {
+  margin: 0;
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--color-accent-soft);
+  color: var(--color-ink-soft);
+}
+
+.belief-source__credit {
+  color: var(--color-accent-dark);
+  font-weight: 700;
+}
+
+.announcements-shell {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.announcements-featured-section {
+  padding-top: var(--space-3);
+}
+
+.featured-announcement {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(18rem, 0.8fr);
+  gap: var(--space-5);
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(239, 226, 209, 0.84));
+  box-shadow: var(--shadow-card);
+}
+
+.featured-announcement__content {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.featured-announcement__meta,
+.announcement-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.announcement-label,
+.announcement-date {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.announcement-label {
+  border: 1px solid rgba(183, 93, 63, 0.24);
+  color: var(--color-accent-dark);
+  background: rgba(234, 209, 191, 0.7);
+  text-transform: uppercase;
+}
+
+.announcement-date {
+  border: 1px solid rgba(31, 42, 44, 0.1);
+  color: var(--color-ink-soft);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.featured-announcement__details {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  padding: var(--space-4);
+  border: 1px solid rgba(31, 42, 44, 0.1);
+  border-radius: var(--radius-md);
+  background: rgba(255, 253, 249, 0.88);
+}
+
+.detail-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.detail-list div {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.detail-list dt {
+  color: var(--color-accent-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail-list dd {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.announcement-list {
+  display: grid;
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+.announcement-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-card);
+}
+
+.announcement-card--with-image {
+  grid-template-columns: minmax(9rem, 12.5rem) minmax(0, 1fr);
+  align-items: start;
+  column-gap: var(--space-4);
+}
+
+.announcement-card--with-image .announcement-card__image {
+  width: 100%;
+  height: 100%;
+  min-height: 10.5rem;
+  border-radius: calc(var(--radius-md) - 0.25rem);
+  object-fit: cover;
+  grid-row: 1 / span 3;
+}
+
+.announcement-card__content {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.announcement-card__content h3 {
+  margin-bottom: 0;
+}
+
+.announcement-card__content p {
+  color: var(--color-ink-soft);
+}
+
+.announcement-card .text-link {
+  margin-top: var(--space-2);
+}
+
+.newsletter-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: var(--space-5);
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(239, 226, 209, 0.72));
+  box-shadow: var(--shadow-card);
+}
+
+.newsletter-panel__content {
+  display: grid;
+  align-content: center;
+  gap: var(--space-3);
+}
+
+.newsletter-form {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid rgba(31, 42, 44, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 253, 249, 0.9);
+}
+
+.newsletter-form__fields {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.newsletter-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.newsletter-form__note {
+  font-size: 1rem;
+  color: var(--color-ink-soft);
 }
 
 .contact-form__intro {
@@ -748,6 +1006,8 @@ p {
 
   .hero__grid,
   .split-layout,
+  .featured-announcement,
+  .newsletter-panel,
   .feature-band__grid,
   .cta-panel,
   .footer-grid {
@@ -820,8 +1080,19 @@ p {
   .card-grid--three,
   .card-grid--four,
   .hero__details,
-  .contact-form__grid {
+  .contact-form__grid,
+  .belief-section {
     grid-template-columns: 1fr;
+  }
+
+  .announcement-card--with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-card--with-image .announcement-card__image {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    grid-row: auto;
   }
 
   .hero__content {

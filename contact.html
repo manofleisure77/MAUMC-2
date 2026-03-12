@@ -87,8 +87,8 @@
     <main id="main-content">
       <!-- Interior header keeps the page concise while matching the established design language. -->
       <section class="section page-header" aria-labelledby="contact-page-title">
-        <div class="container split-layout">
-          <div class="split-layout__content">
+        <div class="container">
+          <div class="page-header__content">
             <p class="eyebrow">Contact Maple Avenue</p>
             <h1 id="contact-page-title">Reach out with a question or plan a visit.</h1>
             <p>
@@ -105,14 +105,6 @@
               </a>
             </div>
           </div>
-
-          <aside class="info-panel" aria-label="Contact page overview">
-            <h2 class="footer-title">Simple next steps</h2>
-            <p>
-              The contact information and form stay in one clear flow so first-time
-              visitors and regular attenders can find help without digging.
-            </p>
-          </aside>
         </div>
       </section>
 
@@ -185,6 +177,63 @@
           </section>
         </div>
       </section>
+
+      <section class="section" id="updates" aria-labelledby="updates-heading">
+        <div class="container">
+          <div class="newsletter-panel">
+            <div class="newsletter-panel__content">
+              <p class="eyebrow">Stay Connected</p>
+              <h2 id="updates-heading">Get church updates by email.</h2>
+              <p>
+                Keep announcements, ministry reminders, and weekly church news
+                within easy reach. This static prototype includes the signup
+                pattern only; connect it to your real email platform later.
+              </p>
+            </div>
+
+            <form class="newsletter-form" action="#" method="post">
+              <div class="newsletter-form__fields">
+                <div class="form-field">
+                  <label for="contact-signup-name">
+                    Name <span class="form-optional">(optional)</span>
+                  </label>
+                  <input id="contact-signup-name" name="signup_name" type="text" />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-signup-email">
+                    Email Address <span class="form-required">(required)</span>
+                  </label>
+                  <input
+                    id="contact-signup-email"
+                    name="signup_email"
+                    type="email"
+                    inputmode="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="newsletter-form__actions">
+                <button class="button button--primary" type="submit">
+                  Sign Up
+                </button>
+                <a
+                  class="button button--ghost"
+                  href="https://www.facebook.com/mapleaveumc/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Follow on Facebook
+                </a>
+                <p class="newsletter-form__note">
+                  No spam. This is a front-end-only form placeholder.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" id="contact">
@@ -206,6 +255,7 @@
             <li><a href="https://www.mapleavenuechurch.org/ministries" target="_blank" rel="noreferrer">Ministries</a></li>
             <li><a href="https://www.mapleavenuechurch.org/announcements" target="_blank" rel="noreferrer">Announcements</a></li>
             <li><a href="https://www.mapleavenuechurch.org/give" target="_blank" rel="noreferrer">Give</a></li>
+            <li><a href="https://www.facebook.com/mapleaveumc/" target="_blank" rel="noreferrer">Facebook</a></li>
           </ul>
         </section>
 
