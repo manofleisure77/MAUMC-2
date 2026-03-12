@@ -18,7 +18,9 @@ This phase is front-end only and should use:
 - CSS
 - vanilla JavaScript
 
-## Project Background
+---
+
+# Project Background
 
 The current Maple Avenue site contains the core content areas needed for a redesign, including:
 
@@ -45,7 +47,9 @@ The inspiration sites provide useful direction:
 
 The redesign should not simply imitate them. It should exceed them in clarity, accessibility, semantic structure, responsiveness, and polish.
 
-## In Scope
+---
+
+# In Scope
 
 - Homepage front-end design and build
 - Responsive navigation
@@ -54,10 +58,13 @@ The redesign should not simply imitate them. It should exceed them in clarity, a
 - Visitor-focused homepage structure
 - Ministry and announcement content blocks
 - Footer with contact details
+- Interior page mockups (starting with Staff)
 - Light JavaScript interactions only where needed
 - Foundation for future interior pages
 
-## Out of Scope
+---
+
+# Out of Scope
 
 - Backend/CMS work
 - Live event integrations
@@ -70,7 +77,9 @@ The redesign should not simply imitate them. It should exceed them in clarity, a
 - Deep SEO implementation
 - Full WCAG audit
 
-## Project Constraints
+---
+
+# Project Constraints
 
 - Static site only
 - No frameworks unless explicitly requested
@@ -79,9 +88,11 @@ The redesign should not simply imitate them. It should exceed them in clarity, a
 - Favor maintainability over novelty
 - Keep file structure simple
 
-## Primary Audiences
+---
 
-### Audience 1: First-Time Visitors
+# Primary Audiences
+
+## Audience 1: First-Time Visitors
 
 Needs:
 
@@ -91,7 +102,7 @@ Needs:
 - how to connect
 - whether there is a place for them
 
-### Audience 2: Current Church Members / Regular Attenders
+## Audience 2: Current Church Members / Regular Attenders
 
 Needs:
 
@@ -102,7 +113,9 @@ Needs:
 - service information
 - easy navigation to common tasks
 
-## UX Goals
+---
+
+# UX Goals
 
 The homepage should answer these questions quickly:
 
@@ -113,21 +126,16 @@ The homepage should answer these questions quickly:
 - What is happening now?
 - How do I contact or support the church?
 
-## Content Priorities for Homepage
+Interior pages should:
 
-Recommended homepage content priority:
+- feel consistent with the homepage
+- be simple and readable
+- avoid visual clutter
+- support scanning and quick understanding
 
-1. Clear welcome / identity statement
-2. Worship time and visit information
-3. Brief introduction to the church
-4. Main pathways into church life
-5. Announcements or featured updates
-6. Giving / connect call to action
-7. Contact and location details
+---
 
-## Recommended Top-Level Navigation
-
-Start with a cleaner top-level navigation such as:
+# Recommended Top-Level Navigation
 
 - Who We Are
 - What We Do
@@ -137,16 +145,36 @@ Start with a cleaner top-level navigation such as:
 
 Potential subcontent mapping:
 
-- About: Guest Information, Staff, What We Believe
-- Worship: Live, Past Messages, Connect Card
-- Ministries: Sunday School, Missions/Outreach, Next Step Ministries, Children, Congregational Care, other ministry items
-- Events: Announcements, Calendar
-- Give: Give Online
-- Contact: address, office details, contact page
+### Who We Are
 
-This should stay simpler than the current site unless later content expansion demands more depth.
+- About Maple Avenue
+- Staff
+- What We Believe
 
-## Design Direction
+### What We Do
+
+- Worship
+- Ministries
+- Sunday School
+- Outreach
+
+### Events
+
+- Announcements
+- Calendar
+
+### Give
+
+- Online Giving
+
+### Contact
+
+- Contact page
+- Location and office information
+
+---
+
+# Design Direction
 
 The design should feel:
 
@@ -167,7 +195,9 @@ Visual goals:
 - more polished section transitions
 - improved readability
 
-## Accessibility Goals
+---
+
+# Accessibility Goals
 
 Minimum accessibility expectations:
 
@@ -180,23 +210,25 @@ Minimum accessibility expectations:
 - descriptive alt text guidance
 - sensible link/button labels
 
-## Technical Standards
+---
 
-### HTML
+# Technical Standards
+
+## HTML
 
 - semantic landmarks
 - clean heading hierarchy
 - meaningful labels and button text
-- no div-heavy structure where semantic elements fit better
+- avoid unnecessary div-heavy structures
 
-### CSS
+## CSS
 
 - establish tokens/variables for colors, spacing, radius, and typography
 - use reusable section/container/button/card styles
 - mobile-friendly layout patterns
 - consistent spacing rhythm
 
-### JavaScript
+## JavaScript
 
 Use only for:
 
@@ -204,160 +236,384 @@ Use only for:
 - accessible dropdown or disclosure behavior if needed
 - minimal interaction enhancements that improve usability
 
-## Build Phases
+---
 
-### Phase 1: Site Analysis and Architecture
+# Build Phases
+
+## Phase 1: Site Analysis and Architecture
 
 Goal:
-Translate the source websites into a better content and UX strategy for Maple Avenue.
+
+Translate the inspiration sites into a better content and UX strategy for Maple Avenue.
 
 Tasks:
 
-- identify the strongest patterns from the three inspiration sites
-- identify the weaknesses to avoid
-- inventory Maple Avenue’s current homepage and primary nav content
-- define the most important homepage goals
-- define a cleaner top-level information architecture
+- identify strong patterns from inspiration sites
+- identify weaknesses to avoid
+- inventory Maple Avenue homepage content
+- define homepage goals
+- define cleaner site architecture
 
 Deliverable:
 
 - homepage outline
-- simplified nav model
+- simplified navigation model
 - list of reusable section types
 
-### Phase 2: Homepage Wireframe in HTML
+---
+
+## Phase 2: Homepage Wireframe in HTML
 
 Goal:
-Create a strong semantic homepage structure before visual refinement.
+
+Create a strong semantic homepage structure before visual styling.
 
 Tasks:
 
-- build `index.html` with semantic landmarks
-- include skip link, header, nav, main, and footer
-- structure homepage sections in priority order
+- build `index.html`
+- implement semantic landmarks
+- structure homepage sections
 - use real Maple Avenue content where available
-- use placeholders only where content is missing
-
-Suggested homepage sections:
-
-1. Skip link
-2. Header and primary nav
-3. Hero / welcome section
-4. Worship times / visit section
-5. About Maple Avenue section
-6. Ministries / ways to connect
-7. Announcements or featured items
-8. Giving / next-step CTA
-9. Footer with address and essentials
 
 Deliverable:
 
-- complete semantic homepage HTML skeleton
+- semantic homepage HTML skeleton
 
-### Phase 3: Design System Foundation
+---
+
+## Phase 3: Design System Foundation
 
 Goal:
-Create a reusable visual system before heavy page styling.
+
+Create a reusable visual system.
 
 Tasks:
 
-- define base typography
-- define colors and spacing tokens
-- define container widths and responsive behavior
-- define buttons, cards, image treatments, and section spacing
-- define utility patterns sparingly if needed
+- typography system
+- color palette
+- spacing tokens
+- container widths
+- reusable components (buttons, cards, sections)
 
 Deliverable:
 
-- a maintainable CSS foundation in `style.css`
+- maintainable `style.css`
 
-### Phase 4: Homepage Visual Design
+---
+
+## Phase 4: Homepage Visual Design
 
 Goal:
-Turn the structured homepage into a polished, modern layout.
+
+Turn the structured homepage into a polished layout.
 
 Tasks:
 
-- design a strong hero section
-- surface worship time and visitor info prominently
-- style ministry and announcement sections with clear hierarchy
-- use Maple Avenue imagery thoughtfully
-- create a clean and trustworthy footer
+- design hero section
+- highlight worship time and visitor info
+- style ministry and announcement sections
+- integrate Maple Avenue imagery
 
 Deliverable:
 
 - polished homepage visual design
 
-### Phase 5: Responsive and Accessibility Refinement
+---
+
+## Phase 5: Responsive and Accessibility Refinement
 
 Goal:
-Ensure the page works smoothly across devices and for keyboard users.
+
+Ensure the page works smoothly across devices.
 
 Tasks:
 
-- refine mobile menu behavior
-- stack layouts appropriately
-- test readable text sizes and spacing
-- prevent overflow and awkward wrapping
-- verify focus states and nav usability
+- refine mobile nav
+- adjust layout stacking
+- test keyboard navigation
+- verify readable spacing
 
 Deliverable:
 
-- responsive, accessible front-end homepage
+- responsive homepage
 
-### Phase 6: Light Interaction Layer
+---
+
+## Phase 6: Light Interaction Layer
 
 Goal:
-Add only the JavaScript needed to improve navigation and usability.
+
+Add minimal JavaScript improvements.
 
 Tasks:
 
 - implement mobile nav toggle
-- add accessible state handling
-- add small enhancements only if they provide clear value
+- improve accessible interaction states
 
 Deliverable:
 
-- minimal, readable `script.js`
+- minimal `script.js`
 
-### Phase 7: Cleanup and Extension Prep
+---
+
+## Phase 7: Cleanup and Extension Preparation
 
 Goal:
-Leave the project ready for future interior pages.
+
+Prepare the project for additional pages.
 
 Tasks:
 
-- remove unused styles
 - normalize class naming
-- note missing content/assets
-- identify reusable patterns for future pages such as About, Worship, Ministries, and Events
+- remove unused styles
+- identify reusable layout patterns
+- confirm consistent container and spacing systems
 
 Deliverable:
 
-- stable homepage foundation ready for expansion
+- stable homepage foundation
 
-## Risks to Watch
+---
 
-- copying inspiration sites too literally
-- burying worship time and visit info
-- overloading the homepage with too many ministry links
-- keeping the menu too complex
-- creating a design that looks modern on desktop but weak on mobile
-- using church images without enough structure or consistency
-- mixing placeholders and real content unclearly
+# Phase 8: Staff Page Mockup
 
-## Definition of Done for MVP
+Goal:
 
-The MVP front-end is complete when:
+Create a **static staff page prototype (`staff.html`)** for design review.
 
-- `index.html` contains a full semantic homepage
-- `style.css` establishes a polished and reusable design system
-- `script.js` contains only necessary UI behavior
-- the homepage is clearly more modern and organized than the current site
-- the design reflects Maple Avenue’s content, not the inspiration sites’ content
-- the site is responsive and accessibility-conscious
-- the homepage is a strong model for future interior pages
+Tasks:
 
-## Recommended Next Step Prompt for Codex
+- create `staff.html`
+- reuse header, navigation, and footer from `index.html`
+- add a page header introducing the Staff page
+- include a short introductory paragraph
+- create a **responsive grid of staff profile cards**
 
-Use this repo’s `AGENTS.md` and `plan.md`. Inspect `index.html`, `style.css`, `script.js`, and the `/images` folder. Then build Phase 1 through Phase 3 of the Maple Avenue homepage redesign. Keep the site static and use vanilla HTML, CSS, and JavaScript only. Prioritize semantic structure, accessibility, a cleaner top-level nav, and a prominent worship/visit section.
+Each staff card should contain:
+
+- staff photo (from `/images`)
+- name
+- role/title
+- short bio
+- optional email link
+
+Design expectations:
+
+- welcoming and approachable
+- consistent photo sizing
+- readable bios
+- layout consistent with the homepage design system
+
+Layout structure:
+
+1. Header + navigation
+2. Page header / title section
+3. Intro paragraph
+4. Staff grid
+5. Footer
+
+Do not implement CMS logic.
+
+Deliverable:
+
+- `staff.html`
+- reusable staff card pattern
+- responsive grid layout
+
+---
+
+# Definition of Done for Staff Mockup
+
+The mockup is complete when:
+
+- `staff.html` exists
+- the page uses the same header/nav/footer as the homepage
+- staff photos load from `/images`
+- staff cards are visually consistent
+- the layout works on mobile
+- the design matches the homepage style
+
+---
+
+# Recommended Next Step Prompt for Codex
+
+Use this repo’s `AGENTS.md` and `plan.md`.
+
+Inspect:
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `/images`
+
+Then implement **Phase 8: Staff Page Mockup**.
+
+Create `staff.html` that:
+
+- reuses the existing header, navigation, and footer
+- follows the same design system used on the homepage
+- includes a page title and introduction
+- displays staff members in a responsive grid of staff cards
+- uses staff photos from `/images`
+
+Reuse existing components and CSS patterns where possible.
+
+This page is a **static prototype for design review** and will later become a WordPress template.
+
+---
+
+# Phase 9: Contact Page Mockup
+
+## Goal
+
+Create a **static contact page prototype (`contact.html`)** that provides visitors with essential contact information and a simple, accessible contact form.
+
+This page is intended for **design and usability review** and will later be integrated with a CMS or backend form handler.
+
+The page should follow the **same layout structure and design system** established by the homepage and other interior pages.
+
+---
+
+## Tasks
+
+- create `contact.html`
+- reuse the **header, navigation, and footer** from `index.html`
+- add a clear page title and short introduction
+- display the church’s contact information in a structured and readable format
+- include a **simple, accessible contact form**
+- ensure form labels and structure support **keyboard navigation and screen readers**
+- keep styling consistent with existing design system components
+
+---
+
+## Contact Information Section
+
+Display the church’s primary contact details clearly near the top of the page.
+
+Information to include:
+
+- church name
+- street address
+- city, state, ZIP
+- phone number
+- office hours
+
+The address should be structured semantically and easy to read.
+
+Example structure:
+
+Contact section  
+Church name  
+Street address  
+City, State ZIP  
+Phone number  
+Office hours
+
+Optional enhancements:
+
+- link the phone number using `tel:`
+- optionally allow the address to link to a map later
+
+---
+
+## Contact Form Requirements
+
+Create a simple form that collects:
+
+- First Name
+- Last Name
+- Email Address
+- Phone Number
+- Comment / Question
+
+Required fields:
+
+- First Name
+- Last Name
+- Email Address
+- Comment / Question
+
+Optional field:
+
+- Phone Number
+
+---
+
+## Accessibility Requirements
+
+The form must follow accessibility best practices:
+
+- each input must have a properly associated `<label>`
+- required fields should use the `required` attribute
+- required fields should also indicate requirement visually and textually
+- group related inputs logically
+- ensure clear focus states
+- ensure keyboard navigation works correctly
+- use semantic HTML elements where appropriate
+- provide descriptive button text
+
+Example principles:
+
+- label must be connected using `for` and `id`
+- form instructions should be clear
+- error handling can be added later during CMS integration
+
+---
+
+## Layout Expectations
+
+Suggested page structure:
+
+1. Header + navigation
+2. Page header / title section
+3. Contact information section
+4. Contact form section
+5. Footer
+
+The contact form should be visually balanced and easy to scan.
+
+Avoid overly complex layouts.
+
+---
+
+## Form Behavior (Prototype Phase)
+
+Since this is a **static prototype**, the form should:
+
+- include semantic structure
+- include accessible labels and required attributes
+- not implement backend processing yet
+
+The form `action` may be a placeholder.
+
+Form submission behavior will be implemented later when CMS or backend integration occurs.
+
+---
+
+## Deliverable
+
+- `contact.html`
+- accessible contact form markup
+- contact information section
+- layout consistent with the homepage design system
+- mobile-friendly form layout
+
+---
+
+## Definition of Done for Contact Page Mockup
+
+The mockup is complete when:
+
+- `contact.html` exists
+- the page uses the same header/nav/footer as the homepage
+- the church address, phone number, and hours are clearly displayed
+- the contact form includes all required fields
+- required fields are clearly marked
+- labels are correctly associated with inputs
+- the form is usable with keyboard navigation
+- the layout works on mobile
+- the design is consistent with the rest of the site
+
+Reuse existing components and CSS patterns where possible.
+
+This page is a **static prototype for design review** and will later become a WordPress template.

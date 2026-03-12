@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff | Maple Avenue United Methodist Church</title>
+    <meta
+      name="description"
+      content="Meet the staff of Maple Avenue United Methodist Church in this static design prototype for the church website redesign."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Reuse the homepage site shell so interior pages stay visually connected. -->
+    <header class="site-header" data-site-header>
+      <div class="utility-bar">
+        <div class="container utility-bar__content">
+          <p class="utility-bar__message">
+            Sunday worship at 11:00 AM and Sunday School at 9:45 AM
+          </p>
+          <ul class="utility-list" aria-label="Quick contact details">
+            <li>63 Maple Avenue, Marietta, GA 30064</li>
+            <li><a href="tel:17704280471">(770) 428-0471</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container header-shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Maple Avenue United Methodist Church home"
+        >
+          <img
+            class="brand__logo"
+            src="https://static.wixstatic.com/media/d527b7_5be0c75b35754197b9181731314d34e4~mv2.png/v1/fill/w_263,h_67,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MA%20Steeple%20Logo%201A.png"
+            alt="Maple Avenue United Methodist Church"
+          />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+          data-menu-toggle
+        >
+          <span class="menu-toggle__label">Menu</span>
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <nav
+          class="site-nav"
+          id="site-navigation"
+          aria-label="Primary"
+          data-nav
+        >
+          <ul class="site-nav__list">
+            <li><a href="index.html#who-we-are">Who We Are</a></li>
+            <li><a href="index.html#what-we-do">What We Do</a></li>
+            <li><a href="index.html#highlights">Events</a></li>
+            <li><a href="index.html#give">Give</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <a
+            class="button button--primary site-nav__cta"
+            href="https://www.mapleavenuechurch.org/give"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Give Online
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Interior page header keeps the same visual language without repeating the homepage hero. -->
+      <section class="section page-header" aria-labelledby="staff-page-title">
+        <div class="container split-layout">
+          <div class="split-layout__content">
+            <p class="eyebrow">Who We Are</p>
+            <h1 id="staff-page-title">
+              Meet the people who help guide Maple Avenue.
+            </h1>
+            <p>
+              This staff page prototype is designed to make leadership and
+              ministry contacts easier to scan, friendlier to browse on mobile,
+              and simpler to extend later as a WordPress template.
+            </p>
+            <div class="button-row">
+              <a
+                class="button button--primary"
+                href="https://www.mapleavenuechurch.org/contact"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact the Church
+              </a>
+              <a class="button button--ghost" href="index.html#who-we-are">
+                Back to Homepage
+              </a>
+            </div>
+          </div>
+
+          <aside class="info-panel" aria-label="Staff page overview">
+            <h2 class="footer-title">A clearer staff directory</h2>
+            <p>
+              Each profile uses the same card language as the homepage so bios,
+              photos, and contact actions stay readable and visually consistent.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="section section--alt"
+        aria-labelledby="staff-directory-heading"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Staff Directory</p>
+            <h2 id="staff-directory-heading">
+              A responsive profile grid for ministry leadership.
+            </h2>
+            <p>
+              Known public staff information is used where available. Additional
+              names, roles, and emails are marked as placeholders until the full
+              church staff directory is confirmed for template build-out.
+            </p>
+          </div>
+
+          <!-- Staff cards reuse the existing card and card-grid patterns with a photo block added. -->
+          <div class="card-grid card-grid--three">
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/3.jpg"
+                alt="Portrait photo used for Rev. Dr. Heather Jallad on the Maple Avenue staff page prototype."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Senior Pastor</p>
+                <h3>Rev. Dr. Heather Jallad</h3>
+                <p>
+                  Maple Avenue’s current site identifies Rev. Dr. Heather Jallad
+                  as Senior Pastor. This card shows how pastoral leadership can
+                  be featured with a short introduction and direct contact
+                  action.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://www.mapleavenuechurch.org/contact"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Contact the church office
+                </a>
+              </div>
+            </article>
+
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/1.jpg"
+                alt="Staff portrait placeholder for Maple Avenue United Methodist Church."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Role Placeholder</p>
+                <h3>Staff Name Placeholder</h3>
+                <p>
+                  Placeholder bio for an additional ministry leader. Replace
+                  this content with the confirmed public role, short bio, and
+                  contact details during WordPress template implementation.
+                </p>
+                <p>Email placeholder pending confirmation.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/2.jpg"
+                alt="Staff portrait placeholder for Maple Avenue United Methodist Church."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Role Placeholder</p>
+                <h3>Staff Name Placeholder</h3>
+                <p>
+                  Placeholder bio for a staff member profile. The intent here is
+                  to demonstrate how longer bios wrap cleanly while card heights
+                  remain balanced across the grid.
+                </p>
+                <p>Email placeholder pending confirmation.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/4.jpg"
+                alt="Staff portrait placeholder for Maple Avenue United Methodist Church."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Role Placeholder</p>
+                <h3>Staff Name Placeholder</h3>
+                <p>
+                  Placeholder bio showing how support, music, children, or
+                  outreach roles could be represented without introducing a
+                  second card design.
+                </p>
+                <p>Email placeholder pending confirmation.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/5.jpg"
+                alt="Staff portrait placeholder for Maple Avenue United Methodist Church."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Role Placeholder</p>
+                <h3>Staff Name Placeholder</h3>
+                <p>
+                  Placeholder bio for another staff profile. Replace with
+                  verified church information only once the public staff list
+                  and preferred contact method are confirmed.
+                </p>
+                <p>Email placeholder pending confirmation.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature staff-card">
+              <img
+                class="staff-card__image"
+                src="images/6.jpg"
+                alt="Staff portrait placeholder for Maple Avenue United Methodist Church."
+              />
+              <div class="staff-card__body">
+                <p class="staff-card__role">Role Placeholder</p>
+                <h3>Staff Name Placeholder</h3>
+                <p>
+                  Placeholder bio included to complete the prototype grid and
+                  review how the layout responds from desktop to tablet and
+                  mobile widths.
+                </p>
+                <p>Email placeholder pending confirmation.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <section>
+          <h2 class="footer-title">Maple Avenue United Methodist Church</h2>
+          <p>63 Maple Avenue, Marietta, GA 30064</p>
+          <p><a href="tel:17704280471">(770) 428-0471</a></p>
+          <p>
+            A welcoming United Methodist congregation serving Marietta through
+            worship, discipleship, care, and community connection.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="footer-title">Quick Links</h2>
+          <ul class="footer-list">
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/guestinfo"
+                target="_blank"
+                rel="noreferrer"
+                >Guest Information</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/ministries"
+                target="_blank"
+                rel="noreferrer"
+                >Ministries</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/announcements"
+                target="_blank"
+                rel="noreferrer"
+                >Announcements</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/give"
+                target="_blank"
+                rel="noreferrer"
+                >Give</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-title">Sunday Rhythm</h2>
+          <ul class="footer-list">
+            <li>Sunday School at 9:45 AM</li>
+            <li>Worship at 11:00 AM</li>
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/worship"
+                target="_blank"
+                rel="noreferrer"
+                >Worship details</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.mapleavenuechurch.org/contact"
+                target="_blank"
+                rel="noreferrer"
+                >Contact the church</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

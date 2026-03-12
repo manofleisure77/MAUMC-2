@@ -4,6 +4,7 @@ const header = document.querySelector("[data-site-header]");
 const navLinks = navigation ? navigation.querySelectorAll("a") : [];
 
 if (menuToggle && navigation) {
+  // Keep menu state changes in one place so button and nav stay synchronized.
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
     navigation.dataset.open = "false";
@@ -17,6 +18,7 @@ if (menuToggle && navigation) {
   closeMenu();
 
   menuToggle.addEventListener("click", () => {
+    // The button state is the single source of truth for whether the menu is open.
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
     if (isOpen) {
       closeMenu();
@@ -35,6 +37,7 @@ if (menuToggle && navigation) {
   });
 
   document.addEventListener("keydown", (event) => {
+    // Escape gives keyboard users a predictable way to dismiss the mobile menu.
     if (event.key === "Escape") {
       closeMenu();
       menuToggle.focus();
@@ -42,6 +45,7 @@ if (menuToggle && navigation) {
   });
 
   window.addEventListener("resize", () => {
+    // Reset nav state when switching between mobile and desktop layouts.
     if (window.innerWidth > 800) {
       navigation.dataset.open = "true";
       menuToggle.setAttribute("aria-expanded", "false");
@@ -53,6 +57,7 @@ if (menuToggle && navigation) {
 }
 
 if (header) {
+  // A subtle shadow helps the sticky header separate from content after scrolling.
   const updateHeaderState = () => {
     header.classList.toggle("is-scrolled", window.scrollY > 12);
   };
