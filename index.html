@@ -24,14 +24,31 @@
     <!-- Sticky header keeps service details and primary navigation accessible. -->
     <header class="site-header" data-site-header>
       <div class="utility-bar">
-        <div class="container utility-bar__content">
-          <p class="utility-bar__message">
-            Sunday worship at 11:00 AM and Sunday School at 9:45 AM
-          </p>
-          <ul class="utility-list" aria-label="Quick contact details">
-            <li>63 Maple Avenue, Marietta, GA 30064</li>
-            <li><a href="tel:17704280471">(770) 428-0471</a></li>
-          </ul>
+        <div class="container utility-bar__shell">
+          <button
+            class="utility-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="utility-panel"
+            data-utility-toggle
+          >
+            <span class="utility-toggle__eyebrow">Sunday info</span>
+            <span class="utility-toggle__summary">Worship, address, and phone</span>
+          </button>
+
+          <div
+            class="utility-bar__content"
+            id="utility-panel"
+            data-utility-panel
+          >
+            <p class="utility-bar__message">
+              Sunday worship at 11:00 AM and Sunday School at 9:45 AM
+            </p>
+            <ul class="utility-list" aria-label="Quick contact details">
+              <li>63 Maple Avenue, Marietta, GA 30064</li>
+              <li><a href="tel:17704280471">(770) 428-0471</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
