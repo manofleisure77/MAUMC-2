@@ -33,7 +33,9 @@
             data-utility-toggle
           >
             <span class="utility-toggle__eyebrow">Sunday info</span>
-            <span class="utility-toggle__summary">Worship, address, and phone</span>
+            <span class="utility-toggle__summary"
+              >Worship, address, and phone</span
+            >
           </button>
 
           <div
@@ -104,7 +106,26 @@
     <main id="main-content">
       <!-- Hero answers the first-time visitor questions immediately. -->
       <section class="hero" id="top">
-        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="hero__backdrop" aria-hidden="true" data-hero-slideshow>
+          <div
+            class="hero__slide is-active"
+            style="
+              background-image: url(&quot;images/soup-contest-1.webp&quot;);
+            "
+          ></div>
+          <div
+            class="hero__slide"
+            style="
+              background-image: url(&quot;images/youth-program-1.webp&quot;);
+            "
+          ></div>
+          <div
+            class="hero__slide"
+            style="
+              background-image: url(&quot;images/corp-worship-2.webp&quot;);
+            "
+          ></div>
+        </div>
         <div class="container hero__grid">
           <div class="hero__content">
             <p class="eyebrow">Maple Avenue United Methodist Church</p>
@@ -126,6 +147,7 @@
                 rel="noreferrer"
               >
                 Fill Out a Connect Card
+                <span class="visually-hidden"> (opens in a new tab)</span>
               </a>
             </div>
             <dl class="hero__details" aria-label="Visit details">
@@ -142,16 +164,6 @@
                 <dd>63 Maple Avenue, Marietta</dd>
               </div>
             </dl>
-          </div>
-
-          <div class="hero__media">
-            <aside class="hero-card" aria-label="Church welcome">
-              <p class="hero-card__quote">Plan your first Sunday.</p>
-              <p class="hero-card__text">
-                Park off Locust Street or beside the sanctuary, then join Sunday
-                School at 9:45 AM and worship at 11:00 AM.
-              </p>
-            </aside>
           </div>
         </div>
       </section>
